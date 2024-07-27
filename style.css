@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    font-size: 5rem;
+}
+
+h1::first-letter{
+    /* color: grey; */
+    font-family: lucida calligraphy;
+    text-shadow: 3px 8px 3px rgba(66, 3, 3, 0.2);
+}
+
+.animes{
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    color: white;
+    font-size: 3rem;
+    position: relative;
+    left: 20%;
+    /* padding: 30px; */
+    text-align: center;
+    border-radius: 5px;
+}
+
+.animes p{
+    position: relative;
+    top: 40%;
+}
+
+.animes p span{
+        /* letter-spacing: 2px; */
+    animation-name: loading;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    /* transition: ease-in-out; */
+}
+
+/* 0%, 20% {
+    filter: blur(0px);
+}
+40% {
+    filter: blur(5px);
+}
+60%, 100% {
+    filter: blur(0px);
+} */
+@keyframes loading {
+    0%{
+        filter: blur(0px);
+        /* opacity: 0.2; */
+    }
+    50%{
+        filter: blur(3px);
+        /* opacity: 0.6; */
+    }
+    100%{
+        filter: blur(0px);
+        /* opacity: 1; */
+    }
+}
+
+.let1{
+    /* animation-delay: 0.1s; */
+    /* color: transparent; */
+}
+.let2{
+    animation-delay: 0.2s;
+}
+.let3{
+    animation-delay: 0.4s;
+}
+.let4{
+    animation-delay: 0.6s;
+}
+.let5{
+    animation-delay: 0.8s;
+}
+.let6{
+    animation-delay: 1s;
+}
+.let7{
+    animation-delay: 1.2s;
+}
+
+
+
